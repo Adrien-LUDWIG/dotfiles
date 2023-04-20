@@ -1,17 +1,19 @@
-{{ if eq .chezmoi.os.id "manjaro" -}}
+{{ if eq .chezmoi.osRelease.id "manjaro" -}}
 
 {{ $packages := list
     "arandr"
     "bat"
-    "code"
     "discord"
     "flameshot"
     "gdu"
     "git-lfs"
-    "i3"
+    "i3-wm"
+    "i3lock"
+    "i3status-manjaro"
     "rofi"
     "tree"
     "vim"
+    "visual-studio-code-bin"
     "zsh" -}}
 
 {{ $sudo := "sudo " -}}
@@ -20,12 +22,13 @@
 {{ end -}}
 
 #!/bin/sh
+echo 'Updating pacman packages. Password need.'
 {{ $sudo }} pacman -Syu
-{{ $sudo }} pacman -S {{ $packages | join " " }}
+{{ $sudo }} pacman -S --needed {{ $packages | join " " }}
 
 {{ else -}}
 
-echo 'Package installation is not implemented yet on `' {{ .chemoi.os.id }} '`.'
+echo 'Package installation is not implemented yet on `' {{ .chemoi.osRelease.id }} '`.'
 echo 'You can add it in `run_onchange_install-packages.sh`.'
 
 {{ end -}}
