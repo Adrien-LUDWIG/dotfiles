@@ -1,6 +1,6 @@
 {{ if eq .chezmoi.osRelease.id "manjaro" -}}
 
-{{ $packages := list
+{{ $pacman_packages := list
     "arandr"
     "bat"
     "discord"
@@ -13,8 +13,12 @@
     "rofi"
     "tree"
     "vim"
-    "visual-studio-code-bin"
+    "yay"
     "zsh" -}}
+
+{{ $yay_packages := list
+    "google-chrome"
+    "visual-studio-code-bin" -}}
 
 {{ $sudo := "sudo " -}}
 {{ if eq .chezmoi.username "root" -}}
@@ -22,9 +26,16 @@
 {{ end -}}
 
 #!/bin/sh
+
+set -e # Exit on error
+
 echo 'Updating pacman packages. Password need.'
-{{ $sudo }} pacman -Syu
-{{ $sudo }} pacman -S --needed {{ $packages | join " " }}
+{{ $sudo }} pacman -Syu --needed {{ $pacman_packages | join " " }}
+
+echo 'Updating yay packages.'
+yay -Syu {{ $yay_packages | join " " }}
+
+echo '\n Packages are up to date!'
 
 {{ else -}}
 
