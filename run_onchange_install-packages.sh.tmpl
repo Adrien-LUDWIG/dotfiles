@@ -1,0 +1,31 @@
+{{ if eq .chezmoi.os.id "manjaro" -}}
+
+{{ $packages := list
+    "arandr"
+    "bat"
+    "code"
+    "discord"
+    "flameshot"
+    "gdu"
+    "git-lfs"
+    "i3"
+    "rofi"
+    "tree"
+    "vim"
+    "zsh" -}}
+
+{{ $sudo := "sudo " -}}
+{{ if eq .chezmoi.username "root" -}}
+{{  $sudo = "" -}}
+{{ end -}}
+
+#!/bin/sh
+{{ $sudo }} pacman -Syu
+{{ $sudo }} pacman -S {{ $packages | join " " }}
+
+{{ else -}}
+
+echo 'Package installation is not implemented yet on `' {{ .chemoi.os.id }} '`.'
+echo 'You can add it in `run_onchange_install-packages.sh`.'
+
+{{ end -}}
