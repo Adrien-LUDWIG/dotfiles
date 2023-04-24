@@ -37,7 +37,7 @@ printf '\nUpdating pacman packages. Root privileges needed.\n'
 printf '\nUpdating yay packages.\n'
 yay -Syu {{ $yay_packages | join " " }}
 
-printf '\n Packages are up to date!'
+printf '\n Packages are up to date!\n'
 
 {{ else -}}
 
