@@ -31,17 +31,17 @@
 
 set -e # Exit on error
 
-echo 'Updating pacman packages. Password need.'
+printf '\nUpdating pacman packages. Password need.\n'
 {{ $sudo }} pacman -Syu --needed {{ $pacman_packages | join " " }}
 
-echo 'Updating yay packages.'
+printf '\nUpdating yay packages.\n'
 yay -Syu {{ $yay_packages | join " " }}
 
-echo '\n Packages are up to date!'
+printf '\n Packages are up to date!'
 
 {{ else -}}
 
-echo 'Package installation is not implemented yet on `' {{ .chemoi.osRelease.id }} '`.'
-echo 'You can add it in `run_onchange_install-packages.sh`.'
+printf '\nPackage installation is not implemented yet on `' {{ .chemoi.osRelease.id }} '`.\n'
+printf 'You can add it in `run_onchange_install-packages.sh`.\n'
 
 {{ end -}}
