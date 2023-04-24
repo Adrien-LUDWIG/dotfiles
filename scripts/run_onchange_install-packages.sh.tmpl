@@ -31,7 +31,7 @@
 
 set -e # Exit on error
 
-printf '\nUpdating pacman packages. Password need.\n'
+printf '\nUpdating pacman packages. Root privileges needed.\n'
 {{ $sudo }} pacman -Syu --needed {{ $pacman_packages | join " " }}
 
 printf '\nUpdating yay packages.\n'
