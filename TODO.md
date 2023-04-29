@@ -1,9 +1,5 @@
 # TODO
 
-- [ ] Merge old i3 config into bare i3 config
-    - [ ] Get custom shortcuts back
-    - [ ] Hide window bar
-    - [ ] Use i3-gaps (maybe)
 - [ ] Install font with ligatures
 - [ ] Customize ROFI
 - [ ] Customize Polybar
@@ -21,3 +17,12 @@
     - [ ] Template it to be different for work and home
     - [ ] Make it random at each lock
 - [ ] Activate toucpad "Tap to click"
+- [ ] Fix Fn keys bindings
+- [ ] Resolve i3 config (many) TODOs
+
+---
+
+- [X] Merge old i3 config into bare i3 config
+    - [X] Get custom shortcuts back
+    - [X] Hide window bar
+    - [X] Use i3-gaps (maybe)
