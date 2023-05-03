@@ -201,25 +201,23 @@ mode "$mode_system" {
 
 # TODO Check if they are all useful.
 # Start Applications
-bindsym $mod+F2 exec /usr/bin/google-chrome-stable --profile-directory='Profile 3'
-bindsym $mod+F3 exec pcmanfm
-bindsym $mod+F4 exec /usr/bin/google-chrome-stable --profile-directory='Profile 7'
-# bindsym $mod+F3 exec ranger
-bindsym $mod+Shift+F3 exec pcmanfm_pkexec
+bindsym $mod+F2 exec /usr/bin/google-chrome-stable --profile-directory='profile_home'
+bindsym $mod+F3 exec thunar
+bindsym $mod+F4 exec /usr/bin/google-chrome-stable --profile-directory='profile_work'
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id flameshot full --path "$HOME/Pictures/flameshot" --clipboard
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym Shift+Print --release exec --no-startup-id flameshot gui
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # Open applications on specific workspaces
+# Use `xprop` to find the window class
 assign [class="discord"] $ws1
-assign [class="google-chrome-stable"] $ws2
-assign [class="pcmanfm"] $ws3
+assign [class="Google-chrome"] $ws2
+assign [class="Code"] $ws3
 
 # TODO: Visual aid for mode resize?
 # Resize window (you can also use the mouse for that)
