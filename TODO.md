@@ -16,7 +16,6 @@
 - [ ] Customize i3-lock
     - [ ] Template it to be different for work and home
     - [ ] Make it random at each lock
-- [ ] Activate toucpad "Tap to click"
 - [ ] Fix Fn keys bindings
 - [ ] Resolve i3 config (many) TODOs
 - [ ] Add pip packages installation script for useful commands like `tldr`
@@ -27,3 +26,4 @@
     - [X] Get custom shortcuts back
     - [X] Hide window bar
     - [X] Use i3-gaps (maybe)
+- [X] Activate toucpad "Tap to click"

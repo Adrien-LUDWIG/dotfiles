@@ -360,3 +360,8 @@ exec feh --bg-scale ~/.config/i3/images/brec_j5.jpg
 
 # Start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Enable touchpad "Tap to click" option 
+# The subcommand finds the touchpad's id
+# See: https://wiki.archlinux.org/title/libinput#Via_xinput_on_Xorg
+exec xinput set-prop $(xinput list --name-only | grep 'Touchpad' | xargs -d '\n' xinput list --id-only) 'libinput Tapping Enabled' 1
