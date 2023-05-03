@@ -19,6 +19,8 @@
 - [ ] Fix Fn keys bindings
 - [ ] Resolve i3 config (many) TODOs
 - [ ] Add pip packages installation script for useful commands like `tldr`
+- [ ] Add git config
+- [ ] Look into [`bat-extras`](https://github.com/eth-p/bat-extras/tree/master)
 
 ---
 
