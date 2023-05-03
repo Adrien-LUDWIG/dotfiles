@@ -19,6 +19,7 @@
 - [ ] Activate toucpad "Tap to click"
 - [ ] Fix Fn keys bindings
 - [ ] Resolve i3 config (many) TODOs
+- [ ] Add pip packages installation script for useful commands like `tldr`
 
 ---
 
