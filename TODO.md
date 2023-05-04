@@ -19,8 +19,8 @@
 - [ ] Fix Fn keys bindings
 - [ ] Resolve i3 config (many) TODOs
 - [ ] Add pip packages installation script for useful commands like `tldr`
-- [ ] Add git config
 - [ ] Look into [`bat-extras`](https://github.com/eth-p/bat-extras/tree/master)
+- [ ] Switch from `antigen` to another zsh pluglins manager since [it is not maintained anymore](https://github.com/zsh-users/antigen/issues/725). Maybe [`antidote`](https://github.com/mattmc3/antidote) ?
 
 ---
 
@@ -29,3 +29,4 @@
     - [X] Hide window bar
     - [X] Use i3-gaps (maybe)
 - [X] Activate toucpad "Tap to click"
+- [X] Add git config
