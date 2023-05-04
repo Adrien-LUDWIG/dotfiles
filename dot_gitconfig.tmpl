@@ -1,0 +1,10 @@
+[user]
+	name = {{ .git.username }}
+	email = {{ .git.email }}
+[core]
+	excludesFile = ~/.gitignore
+	editor = vim
+[init]
+	defaultBranch = main
+[commit]
+	template = ~/.gitmessage
