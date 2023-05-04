@@ -22,6 +22,7 @@ exec --no-startup-id dex --autostart --environment i3
 # This comes from Manjaro i3 comunity edition 
 # More applications in 17a273e
 exec --no-startup-id xautolock -time 10 -locker blue_screen_lock
+exec --no-startup-id xfce4-power-manager
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
