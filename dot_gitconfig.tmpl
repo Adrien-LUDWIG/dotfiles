@@ -8,3 +8,24 @@
 	defaultBranch = main
 [commit]
 	template = ~/.gitmessage
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[color]
+	ui = true
+
+# Diff-so-fancy config (https://github.com/so-fancy/diff-so-fancy#usage)
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
