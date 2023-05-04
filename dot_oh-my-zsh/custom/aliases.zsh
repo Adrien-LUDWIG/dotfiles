@@ -8,3 +8,19 @@ alias grep='printf "You could use rg." && grep'
 
 ## Miscellaneous
 alias battery='upower -i $(upower -e | rg BAT) | rg --color=never "state|to full|to empty|percentage"'
+
+# Git
+alias gs='git status -sb'
+alias gadog='git --all --decorate --oneline --graph'
+
+# Chezmoi
+alias cz='chezmoi'
+alias czc='chezmoi cd'
+alias czi='chezmoi init'
+alias cza='chezmoi add'
+alias cze='chezmoi edit'
+alias czap='chezmoi apply'
+alias czu='chezmoi update'
+
+# Ripgrep
+alias -g G='| rg'
