@@ -21,6 +21,7 @@
 - [ ] Look into [`bat-extras`](https://github.com/eth-p/bat-extras/tree/master)
 - [ ] Switch from `antigen` to another zsh pluglins manager since [it is not maintained anymore](https://github.com/zsh-users/antigen/issues/725). Maybe [`antidote`](https://github.com/mattmc3/antidote) ?
 - [ ] Add aliases for `exa`
+- [ ] Add aliases for `fd`
 - [ ] Custom `exa` colors (may be linked to othoer color scheme, I need to look into it)
 
 ---
