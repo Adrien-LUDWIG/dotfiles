@@ -1,0 +1,7 @@
+[".config/rofi-themes"]
+    type = "git-repo"
+    url = "https://github.com/adi1090x/rofi.git"
+    [".config/rofi-themes".clone]
+        args = ["--depth=1"]
+    [".config/rofi-themes".pull]
+        args = ["--depth=1"]

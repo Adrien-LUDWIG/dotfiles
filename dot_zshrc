@@ -20,5 +20,8 @@ export EDITOR='vim'
 source $ZSH_CUSTOM/aliases.zsh
 source $ZSH_CUSTOM/you-should-use_config.zsh
 
+# Add rofi-themes scripts to PATH
+export PATH="$HOME/.config/rofi/scripts:$PATH"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
