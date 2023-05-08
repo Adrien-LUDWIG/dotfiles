@@ -23,6 +23,8 @@
 - [ ] Add aliases for `exa`
 - [ ] Add aliases for `fd`
 - [ ] Custom `exa` colors (may be linked to othoer color scheme, I need to look into it)
+- [ ] Config compoistor (probably [`picom`](https://github.com/yshui/picom)) for transparency management (for rofi tabs for example)
+- [ ] Set up enhanced clipboard (See [`CopyQ`](https://github.com/hluk/CopyQ) or [`Clipboard`](https://github.com/Slackadays/Clipboard))
 
 ---
 
