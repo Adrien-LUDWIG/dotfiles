@@ -27,6 +27,14 @@
 - [ ] Set up enhanced clipboard (See [`CopyQ`](https://github.com/hluk/CopyQ) or [`Clipboard`](https://github.com/Slackadays/Clipboard))
 - [ ] Add shortcut and/or aliases to use dragon-drop (See https://blog.meain.io/2022/terminal-drag-and-drop/)
 - [ ] Use a better shell history. See [Atuin](https://github.com/ellie/atuin)
+- [ ] Explore `tmux` (and `tmuxinator`). Especially:
+    - [ ] Integration with current config
+    - [ ] Double-click actions, to enable [dragon-drop shortcut](https://blog.meain.io/2022/terminal-drag-and-drop/)
+    - [ ] Vim bindings
+- [ ] Customize Dunst. Especially:
+    - [ ] Unmissable notification fo low battery
+    - [ ] Make it beautiful
+
 
 ---
 
