@@ -35,6 +35,7 @@
     - [ ] Unmissable notification fo low battery
     - [ ] Make it beautiful
 - [ ] Look into Nix, [the package manager to rule them all](https://medium.com/@zmre/the-package-manager-to-rule-them-all-9a8829e4f392).
+- [ ] Test [`enhancd`](https://github.com/b4b4r07/enhancd) again
 
 
 ---
