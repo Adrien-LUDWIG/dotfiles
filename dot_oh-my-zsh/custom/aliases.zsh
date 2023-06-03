@@ -22,6 +22,7 @@ alias to='touch'
 alias gs='git status -sb'
 alias gadog='git log --all --decorate --oneline --graph'
 alias glr='git pull --rebase'
+alias grrn='git remote rename'
 
 ## Chezmoi
 alias cz='chezmoi'
