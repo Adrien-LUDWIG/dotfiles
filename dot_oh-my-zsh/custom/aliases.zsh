@@ -41,8 +41,9 @@ alias -g G='| rg'
 alias fehf='feh --full-screen'
 
 ## Exercism
-alias ex='exercism'
+alias exh'exercism'
 alias exh='exercism help'
+alias exd='exercism download'
 alias exo='exercism open'
 alias exs='exercism submit'
 alias ext='exercism troubleshoot'
