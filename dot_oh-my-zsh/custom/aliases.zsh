@@ -4,6 +4,7 @@
 
 ## Better commands
 alias more='less'
+alias open='xdg-open'
 
 ## Miscellaneous
 alias battery='upower -i $(upower -e | rg BAT) | rg --color=never "state|to full|to empty|percentage"'
