@@ -1,0 +1,55 @@
+#!/usr/bin/bash
+
+# Immediately exit if any command has a non-zero exit status
+set -e
+
+###############################################################################
+#                                    Root                                     #
+###############################################################################
+
+{{ if eq .chezmoi.osRelease.id "manjaro" -}}
+
+##########
+# Pacman #
+##########
+
+# Remove orphans
+sudo pacman -Rs $(pacman -Qdtq)
+
+# Remove old installed packages cache (keep 2)
+paccache -rvk2
+
+# Remove old uninstalled packages cache (keep 1)
+paccache -rvuk1
+
+{{ end -}}
+
+###########
+# Journal #
+###########
+
+# Remove all but the most recent entries by size
+journalctl --vacuum-size=50M
+
+###############################################################################
+#                                    Home                                     #
+###############################################################################
+
+#########
+# Cache #
+#########
+
+# Automatically purge all .cache files that have not been accessed in 100 days
+find ~/.cache/ -type f -atime +100 -delete
+
+{{ if eq .chezmoi.osRelease.id "manjaro" -}}
+
+#######
+# Yay #
+#######
+
+# Clean unneeded dependencies
+yay -Yc
+
+{{ end -}}
+
