@@ -45,7 +45,7 @@
     - [X] Get custom shortcuts back
     - [X] Hide window bar
     - [X] Use i3-gaps (maybe)
-- [X] Activate toucpad "Tap to click"
+- [X] Activate touchpad "Tap to click"
 - [X] Add git config
 - [X] Add Zsh plugins
     - [X] Better CD -> `z`
