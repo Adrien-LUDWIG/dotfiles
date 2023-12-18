@@ -1,5 +1,6 @@
 # TODO
 
+- [ ] Use [rip](https://github.com/nivekuil/rip) instead of rm
 - [ ] Install font with ligatures
 - [ ] Customize ROFI
 - [ ] Customize Polybar
