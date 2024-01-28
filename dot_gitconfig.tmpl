@@ -13,19 +13,25 @@
 [color]
 	ui = true
 
-# Diff-so-fancy config (https://github.com/so-fancy/diff-so-fancy#usage)
+# Delta (git diff in Rust) config
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[color "diff"]
-	meta = 11
-	frag = magenta bold
-	func = 146 bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    line-numbers = true
+    side-by-side = true
+    features = dracula
+    true-color = always
+    hyperlinks = true
+    hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
