@@ -32,10 +32,10 @@ alias cz='chezmoi'
 alias czc='chezmoi cd'
 alias czi='chezmoi init'
 alias cza='chezmoi add'
-alias cze='chezmoi edit'
+alias cze='chezmoi edit --apply'
 alias czr='chezmoi remove'
 alias czap='chezmoi apply'
-alias czu='chezmoi update'
+alias czu='chezmoi update --apply'
 
 ## Ripgrep
 alias -g G='| rg'
