@@ -13,7 +13,7 @@ alias battery='upower -i $(upower -e | rg BAT) | rg --color=never "state|to full
 
 alias v='vim'
 alias b='bat'
-alias t='tree'
+alias t='erd -HI'
 alias f='fd'
 alias c='cd'
 alias m='mkdir'
