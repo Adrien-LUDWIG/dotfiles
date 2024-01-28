@@ -41,6 +41,9 @@ alias czu='chezmoi update --apply'
 # Remove df alias defined by oh-my-zsh
 alias df="duf"
 
+# Dust, better du in Rust
+alias du="dust"
+
 ## Ripgrep
 alias -g G='| rg'
 
