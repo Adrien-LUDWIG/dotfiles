@@ -17,7 +17,7 @@ alias l='exa --long --header --icons --git'
 alias la='exa --long --header --icons --git --all'
 alias t='erd -HI'
 alias f='fd'
-alias c='cd'
+alias c='z'
 alias m='mkdir'
 alias to='touch'
 
