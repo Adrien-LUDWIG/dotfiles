@@ -37,6 +37,10 @@ alias czr='chezmoi remove'
 alias czap='chezmoi apply'
 alias czu='chezmoi update --apply'
 
+# Duf, better df in go
+# Remove df alias defined by oh-my-zsh
+alias df="duf"
+
 ## Ripgrep
 alias -g G='| rg'
 
