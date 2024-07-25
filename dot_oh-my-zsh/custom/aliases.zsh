@@ -11,6 +11,7 @@ alias battery='upower -i $(upower -e | rg BAT) | rg --color=never "state|to full
 
 # Make everything short
 
+alias a='alias'
 alias v='vim'
 alias b='bat'
 alias l='exa --long --header --icons --git'
