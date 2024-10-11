@@ -11,11 +11,16 @@ antigen use oh-my-zsh
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 antigen bundle common-aliases
+
+zstyle :omz:plugins:ssh-agent quiet yes
+zstyle :omz:plugins:ssh-agent lazy yes
+
+antigen bundle ssh-agent
 # antigen bundle heroku
-# antigen bundle pip
+antigen bundle pip
 # antigen bundle lein
 # antigen bundle command-not-found
-# antigen bundle docker
+antigen bundle docker
 # antigen bundle autojump
 # antigen bundle colorize
 # antigen bundle magic-enter
@@ -32,7 +37,7 @@ antigen bundle joshskidmore/zsh-fzf-history-search
 # antigen bundle kennethreitz/autoenv
 # antigen bundle b4b4r07/enhancd
 # antigen bundle supercrabtree/k
-# antigen bundle esc/conda-zsh-completion
+antigen bundle conda-incubator/conda-zsh-completion@main
 
 # Load the theme.
 antigen theme romkatv/powerlevel10k

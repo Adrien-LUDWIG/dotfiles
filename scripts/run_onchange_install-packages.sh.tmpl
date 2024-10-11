@@ -1,3 +1,7 @@
+#!/bin/sh
+
+set -e # Exit on error
+
 {{ if eq .chezmoi.osRelease.id "manjaro" -}}
 
 {{ $pacman_packages := list
@@ -56,11 +60,6 @@
 {{ if eq .chezmoi.username "root" -}}
 {{  $sudo = "" -}}
 {{ end -}}
-
-#!/bin/sh
-
-set -e # Exit on error
-
 printf '\nUpdating pacman packages. Root privileges needed.\n'
 {{ $sudo }} pacman -Syu --needed {{ $pacman_packages | join " " }}
 
@@ -71,7 +70,7 @@ printf '\n Packages are up to date!\n'
 
 {{ else -}}
 
-printf '\nPackage installation is not implemented yet on `' {{ .chemoi.osRelease.id }} '`.\n'
+printf '\nPackage installation is not implemented yet on `' {{ .chezmoi.osRelease.id }} '`.\n'
 printf 'You can add it in `run_onchange_install-packages.sh`.\n'
 
 {{ end -}}

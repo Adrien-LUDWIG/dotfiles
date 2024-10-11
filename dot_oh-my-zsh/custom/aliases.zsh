@@ -2,6 +2,9 @@
 
 # System
 
+## Fix aliases after sudo
+alias sudo='sudo '
+
 ## Better commands
 alias more='less'
 alias open='xdg-open'
@@ -21,12 +24,14 @@ alias f='fd'
 alias c='z'
 alias m='mkdir'
 alias to='touch'
+alias -g W=' | wc -l'
 
 ## Git
 alias gs='git status -sb'
 alias gadog='git log --all --decorate --oneline --graph'
 alias glr='git pull --rebase'
 alias grrn='git remote rename'
+alias gstsm='git stash push --staged --message'
 
 ## Chezmoi
 alias cz='chezmoi'
@@ -65,3 +70,5 @@ alias exw='exercism workspace'
 ## Dragon-drop
 alias dd='dragon-drop --and-exit'
 
+## WSL specific
+alias -g C=' | clip.exe'
