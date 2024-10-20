@@ -21,7 +21,6 @@ exec --no-startup-id dex --autostart --environment i3
 # Autostart applications
 # This comes from Manjaro i3 comunity edition 
 # More applications in 17a273e
-exec --no-startup-id xautolock -time 10 -locker blue_screen_lock
 exec --no-startup-id xfce4-power-manager
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
@@ -202,8 +201,7 @@ mode "$mode_system" {
 
 # Start Applications
 bindsym $mod+F1 exec --no-startup-id discord
-bindsym $mod+F2 exec --no-startup-id /usr/bin/google-chrome-stable --profile-directory='profile_home'
-bindsym $mod+Shift+F2 exec --no-startup-id /usr/bin/google-chrome-stable --profile-directory='profile_work'
+bindsym $mod+F2 exec --no-startup-id firefox
 bindsym $mod+F3 exec --no-startup-id code
 bindsym $mod+t exec --no-startup-id thunar
 bindsym $mod+Shift+d --release exec --no-startup-id rofimoji --skin-tone 'neutral' --selector-args '-matching prefix'
@@ -214,7 +212,7 @@ bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 # Open applications on specific workspaces
 # Use `xprop` to find the window class
 assign [class="discord"] $ws1
-assign [class="Google-chrome"] $ws2
+assign [class="firefox"] $ws2
 assign [class="Code"] $ws3
 
 # TODO: Visual aid for mode resize?
