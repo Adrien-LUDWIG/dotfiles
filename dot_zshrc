@@ -13,9 +13,6 @@ export ZSH_CUSTOM=$ZSH/custom
 source /usr/share/zsh/share/antigen.zsh
 antigen init ~/.antigenrc
 
-# Preferred editor for local and remote sessions
-export EDITOR='vim'
-
 # Get custom configurations
 source $ZSH_CUSTOM/aliases.zsh
 source $ZSH_CUSTOM/you-should-use_config.zsh
@@ -25,9 +22,6 @@ fpath+="$HOME/.zfunc"
 
 # Add rofi-themes scripts to PATH
 export PATH="$HOME/.config/rofi/scripts:$PATH"
-
-# Get env vars from .profile
-source $HOME/.profile
 
 # Zoxide
 function z () {
