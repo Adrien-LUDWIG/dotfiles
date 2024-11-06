@@ -5,6 +5,7 @@ set -e # Exit on error
 {{ if eq .chezmoi.osRelease.id "manjaro" -}}
 
 {{ $pacman_packages := list
+    "alacritty"
     "arandr"
     "bat"
     "calc"
