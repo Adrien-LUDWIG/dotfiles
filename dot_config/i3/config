@@ -350,6 +350,9 @@ default_border pixel 1
 default_floating_border pixel 1
 for_window [class="^.*"] border pixel 1
 
+# Adapt display when a monitor is plugged or unplugged
+exec srandrd -e .config/autorandr/change.sh
+
 # TODO: Choose better background. (Make it random ?)
 # Set background wallpaper
 exec feh --bg-scale ~/.config/i3/images/brec_j5.jpg
@@ -361,3 +364,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # The subcommand finds the touchpad's id
 # See: https://wiki.archlinux.org/title/libinput#Via_xinput_on_Xorg
 exec xinput set-prop $(xinput list --name-only | grep 'Touchpad' | xargs -d '\n' xinput list --id-only) 'libinput Tapping Enabled' 1
+
