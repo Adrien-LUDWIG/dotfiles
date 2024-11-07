@@ -208,6 +208,8 @@ bindsym $mod+Shift+d --release exec --no-startup-id rofimoji --skin-tone 'neutra
 bindsym Print exec --no-startup-id flameshot full --path "$HOME/Pictures/flameshot" --clipboard
 bindsym Shift+Print --release exec --no-startup-id flameshot gui
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+# Take a screenshot, pass it through an OCR and store the result in the clipboard
+bindsym $mod+o exec --no-startup-id flameshot gui --raw | tesseract stdin stdout -l fra+eng --psm 6 | xclip -in -selection clipboard
 
 # Open applications on specific workspaces
 # Use `xprop` to find the window class
