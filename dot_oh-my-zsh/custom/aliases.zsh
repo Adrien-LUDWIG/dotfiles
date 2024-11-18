@@ -68,5 +68,5 @@ alias exv='exercism version'
 alias exw='exercism workspace'
 
 ## Dragon-drop
-alias dd='dragon-drop --and-exit'
+alias dd='dragon-drop --and-exit --all'
 alias -g C=' | xclip -selection clipboard'
