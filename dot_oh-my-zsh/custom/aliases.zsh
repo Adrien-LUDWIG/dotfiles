@@ -4,6 +4,7 @@
 
 ## Fix aliases after sudo
 alias sudo='sudo '
+alias tldr='tldr '
 
 ## Better commands
 alias more='less'
