@@ -15,8 +15,9 @@ image/png=viewnior.desktop;gpicview.desktop;
 text/plain=mousepad.desktop
 x-scheme-handler/mailto=userapp-Thunderbird.desktop
 message/rfc822=userapp-Thunderbird.desktop
-application/pdf=mupdf.desktop
+application/pdf=org.pwmt.zathura.desktop
 application/x-bittorrent=deluge.desktop
+x-scheme-handler/anytype=anytype.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;
