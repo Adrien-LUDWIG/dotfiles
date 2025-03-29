@@ -367,3 +367,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # See: https://wiki.archlinux.org/title/libinput#Via_xinput_on_Xorg
 exec xinput set-prop $(xinput list --name-only | grep 'Touchpad' | xargs -d '\n' xinput list --id-only) 'libinput Tapping Enabled' 1
 
+# move focused workspace between monitors
+bindsym $mod+Shift+less move workspace to output right
+bindsym $mod+less move workspace to output left
